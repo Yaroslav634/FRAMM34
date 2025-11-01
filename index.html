@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
      <header>
         <div class="container">
             <div class="logo">Barber</div>
@@ -23,7 +22,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
@@ -37,7 +35,6 @@
         </div>
     </section>
 
-    <!-- History Section -->
     <section id="about" class="history">
         <div class="container">
             <div class="history-image">
@@ -51,7 +48,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
             <h2>Services We Provide</h2>
@@ -75,7 +71,6 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <div class="container">
             <h2>Our Gallery</h2>
@@ -91,7 +86,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-logo">Barber</div>
@@ -105,7 +99,6 @@
     </footer>
 
     <script>
-        // Smooth scrolling for navigation links
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -120,22 +113,20 @@
             });
         });
 
-        // Appointment button functionality
         document.querySelector('.appointment-btn').addEventListener('click', function() {
             alert('Thank you for your interest! Please call us at (555) 123-4567 to schedule an appointment.');
         });
 
-        // Get Started button functionality
         document.querySelector('.get-started-btn').addEventListener('click', function() {
             document.querySelector('#services').scrollIntoView({
                 behavior: 'smooth'
             });
         });
 
-        // View All button functionality
         document.querySelector('.view-all-btn').addEventListener('click', function() {
             alert('Our full gallery will be available soon!');
         });
     </script>
 </body>
+
 </html>
